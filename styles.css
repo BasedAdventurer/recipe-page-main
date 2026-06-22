@@ -156,25 +156,30 @@ body {
     margin-block-end: 10px;
 } 
 
-.nutrition__table td {
-    padding: 10px 0;
+.nutrition__table tr {
+    display: flex;
+    justify-content: flex-start;
     border-bottom: 1px solid var(--clr-stone-150);
+    padding-block: 10px;
+    padding-inline-start: 20px;
 }
 
-.nutrition__table tr:last-child td {
+.nutrition__table tr:last-child {
     border-bottom: none;
 }
 
-.nutrition__table td.label {
+.nutrition__table .label {
+    width: 40%;
+    text-align: left;
     color: var(--clr-stone-600);
     font-weight: 500;
-    padding-inline-start: 30px;
 }
 
-.nutrition__table td.value {
+.nutrition__table .value {
+    width: 60%;
+    text-align: left;
     color: var(--clr-brown-800);
     font-weight: 700;
-    padding-inline-end: 25px;
 }
 
 @media(max-width: 768px) {
